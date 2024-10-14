@@ -10,8 +10,11 @@ public class BallMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        int randomIndex = Random.Range(0, 8);
+        float angle = randomIndex * 45f * Mathf.Deg2Rad;
         rb2d = GetComponent<Rigidbody2D>();
-        rb2d.AddForce(new Vector2(20*Time.deltaTime * speed,20*Time.deltaTime * speed));
+        Vector2 direction = new Vector2(Mathf.Cos(angle), Mathf.Sin(angle));
+        rb2d.AddForce(direction * speed);
     }
 
     // Update is called once per frame
