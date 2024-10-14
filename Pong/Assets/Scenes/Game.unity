@@ -264,6 +264,8 @@ GameObject:
   - component: {fileID: 204738751}
   - component: {fileID: 204738750}
   - component: {fileID: 204738749}
+  - component: {fileID: 204738753}
+  - component: {fileID: 204738754}
   m_Layer: 0
   m_Name: Ball
   m_TagString: Untagged
@@ -400,6 +402,31 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &204738753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 204738748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a30775533c485984bb793a3202b6418c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 350
+--- !u!114 &204738754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 204738748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c87cf287dc726f4cbab389700059471, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &392503618
 GameObject:
   m_ObjectHideFlags: 0
@@ -1086,7 +1113,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 5
 --- !u!1 &1661615642
 GameObject:
   m_ObjectHideFlags: 0
